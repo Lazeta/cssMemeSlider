@@ -3,21 +3,27 @@
   padding: 0;
 }
 
+body {
+  background-image: url(./assets/173823-arhitektura-sinij-drevesina-pryamougolnik-seryj_cvet-1920x1080\ \(1\).jpg);
+}
+
 .wrapper {
   position: relative;
-  width: 35vw;
+  width: 39vw;
   height: 75vh;
   overflow: hidden;
   margin: auto;
   top: 11vh;
   background-color: rgb(51, 51, 51);
   border: 0.3rem solid rgb(7, 7, 7);
+  border-radius: 5%;
 }
 
 .slider__container {
   position: absolute;
   width: 35vw;
   height: 60vh;
+  overflow: hidden;
   padding-bottom: 10%;
   top: 50%;
   left: 50%;
@@ -62,6 +68,13 @@
   transform: scale(1.1);
 }
 
+input[name="default-dot"] {
+  position: absolute;
+  bottom: 6.5rem;
+  right: 5rem;
+  visibility: hidden;
+}
+
 .slider {
   width: 400%;
   height: 100%;
@@ -77,4 +90,20 @@
   width: 100%;
   height: 100%;
   border-radius: 0.75rem;
+}
+
+#dot__1:checked ~ .slider__item {
+  margin-left: 0;
+}
+
+#dot__2:checked ~ .slider__item {
+  margin-left: -25%;
+}
+
+#dot__3:checked ~ .slider__item {
+  margin-left: -50%;
+}
+
+#dot__4:checked ~ .slider__item {
+  margin-left: -75%;
 }
