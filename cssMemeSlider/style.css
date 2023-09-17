@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url(./assets/173823-arhitektura-sinij-drevesina-pryamougolnik-seryj_cvet-1920x1080\ \(1\).jpg);
+  background-image: url(./assets/background.jpg);
 }
 
 .wrapper {
@@ -32,53 +32,56 @@ body {
 
 .controls__wrapper {
   width: 100%;
-  height: 100%;
+  min-height: 5rem;
   position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  color: rgb(7, 7, 7);
-  background-color: aliceblue;
+  margin-top: 1.5rem;
+  color: rgb(212, 209, 209);
+  background-color: transparent;
 }
 
 .quotes {
+  display: flex;
+  width: 70%;
+  align-content: flex-start;
+  justify-content: flex-start;
+  transform: translateX(10%, 10%);
+  transition: all 0.6s ease-in-out;
 }
 
 .quote {
+  width: 100%;
+  transition: all 0.6s ease;
 }
+
+
 
 .controls {
   position: absolute;
   top: 0;
-  display: flex;
-  padding: 0.25rem;
-  left: 50%;
-  transform: translateX(-50%);
-  cursor: pointer;
+  right: 0;
 }
 
 .controls__btn {
   width: 0.8rem;
   height: 0.8rem;
   margin: 0.2rem;
-  background-color: rgb(15, 27, 196);
   opacity: 0.5;
   transition: all 0.4s ease;
-  border-radius: 1rem;
-  cursor: pointer;
+  /* border-radius: 1rem; */
+}
+
+.controls__btn:checked {
+  opacity: 1;
+  transform: scale(1.2);
 }
 
 .controls__btn:hover {
   opacity: 1;
   transform: scale(1.1);
-}
-
-input[name="default-dot"] {
-  position: absolute;
-  bottom: 6.5rem;
-  right: 5rem;
-  visibility: hidden;
 }
 
 .slider {
@@ -112,4 +115,30 @@ input[name="default-dot"] {
 
 #dot__4:checked ~ .slider__item {
   margin-left: -75%;
+}
+
+.quotes .quote__wrapper:not(:first-child) {
+  display: none;
+}
+
+#dot__1:checked ~ .quotes #quote__1 {
+  display: block;
+}
+
+#dot__2:checked ~ .quotes #quote__2 {
+  display: block;
+}
+
+#dot__3:checked ~ .quotes #quote__3 {
+  display: block;
+}
+
+#dot__4:checked ~ .quotes #quote__4 {
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  padding: 0.25rem;
+  cursor: pointer;
 }
