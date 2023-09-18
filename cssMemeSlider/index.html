@@ -5,45 +5,65 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Css Meme Slider</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="wrapper">
-    <div class="slider__container">
-      <input type="radio" name="dot" id="dot__1" checked>
-      <input type="radio" name="dot" id="dot__2">
-      <input type="radio" name="dot" id="dot__3">
-      <input type="radio" name="dot" id="dot__4">
+    <div class="slider">
+      <div class="slider__container">
+        
+        <input type="radio" name="old-dot" id="dot__1" checked>
+        <input type="radio" name="old-dot" id="dot__2">
+        <input type="radio" name="old-dot" id="dot__3">
+        <input type="radio" name="old-dot" id="dot__4">
+        <input type="radio" name="old-dot" id="dot__5">
 
-      <div class="slider">        
-        <div class="slide">
-          <img src="./assets/0_U9lU6ypzkXJf8Bi_.png" alt="image 1" class="img">
+        <div class="slide__item slide__1">
+          <img src="./assets/0_U9lU6ypzkXJf8Bi_.png" alt="image 1" class="slide__item__img">
         </div>
-        <div class="slide">
-          <img src="./assets/1_BMdNGcek6kqR5J5pwjQwAw.png" alt="image 2" class="img">
+        <div class="slide__item">
+          <img src="./assets/History_TS_ProgrammingMemes_image6.png" alt="image 2" class="slide__item__img">
         </div>
-        <div class="slide">
-          <img src="./assets/1_rIL0njh-OExpKt4WS55LMQ.jpg" alt="image 3" class="img">
+        <div class="slide__item">
+          <img src="./assets/1_rIL0njh-OExpKt4WS55LMQ.jpg" alt="image 3" class="slide__item__img">
         </div>
-        <div class="slide">
-          <img src="./assets/fb641f94206cf92eec680ade09438ce1.jpg" alt="image 4" class="img">
+        <div class="slide__item">
+          <img src="./assets/fb641f94206cf92eec680ade09438ce1.jpg" alt="image 4" class="slide__item__img">
+        </div>
+        <div class="slide__item">
+          <img src="./assets/60d33be745999ac3353f49bd_KyhyHs_Rlf3kWWoC8Al_C9Y9SZ4dQu_K0fiLIsiCA5Gl8M3Eq77np68PFUgDPd6lKA8EmhKgWs7joHpsQm8upaoIayr4hi6O7Oj3HTzcoVop1HORjy74OdVTZNqFg_mIlfotr0EJ.png" alt="image 5" class="slide__item__img">
         </div>
       </div>
-      
-      <div class="controls__wrapper">
-        <div class="quotes">
-            <h4 class="quote" id="quote__1" cheched>"The only way to do great work is to love what you do." - Steve Jobs</h4>
-            <h4 class="quote" id="quote__2">"In the middle of difficulty lies opportunity." - Albert Einstein</h4>
-            <h4 class="quote" id="quote__3">"Believe you can, and you're halfway there." - Theodore Roosevelt</h4>
-            <h4 class="quote" id="quote__4">"Success is not final, failure is not fatal: It is the courage to continue that counts." - Winston Churchill</h4>
+
+      <div class="slider__footer">
+        <div class="slider__quotes">
+          <h3 class="quotes__item quote__1">Git commit -m 'what is life if full of care'</h3>
+          <h3 class="quotes__item quote__2">Missing semicolon right here on line 62</h3>
+          <h3 class="quotes__item quote__3">Learn programming to understand programming jokes</h3>
+          <h3 class="quotes__item quote__4">Hello World!</h3>
+          <h3 class="quotes__item quote__5">You can build on our developer platform</h3>
+        </div>
+  
+        <div class="slider__paginaion">
+          <label for="dot__1" class="pagination__item dot__1">
+            <span class="dot"></span>
+          </label>
+          <label for="dot__2" class="pagination__item dot__2">
+            <span class="dot"></span>
+          </label>
+          <label for="dot__3" class="pagination__item dot__3">
+            <span class="dot"></span>
+          </label>
+          <label for="dot__4" class="pagination__item dot__4">
+            <span class="dot"></span>
+          </label>
+          <label for="dot__5" class="pagination__item dot__5">
+            <span class="dot"></span>
+          </label>
         </div>
 
-        <div class="controls" id="controls">
-          <label for="dot__1" class="controls__btn"></label>
-          <label for="dot__2" class="controls__btn"></label>
-          <label for="dot__3" class="controls__btn"></label>
-          <label for="dot__4" class="controls__btn"></label>
-        </div>
       </div>
       
     </div>
