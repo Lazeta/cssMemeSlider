@@ -153,9 +153,9 @@ input[name="old-dot"] {
 .slider__container:has(#dot__4:checked ) ~.slider__footer .dot__4:hover span,
 .slider__container:has(#dot__5:checked ) ~.slider__footer .dot__5:hover span {
   opacity: 1;
-  background-color: rgb(19, 19, 19);
+  background-color: rgb(17, 228, 228);
   border: 0.2rem solid rgb(16, 90, 173);
-  transform: scale(1.10);
+  transform: scale(1.2);
 }
 .slider__container:has(#dot__2:checked ) ~.slider__footer .quote__1 {
   margin-left: -100%;
@@ -168,6 +168,17 @@ input[name="old-dot"] {
 }
 .slider__container:has(#dot__5:checked ) ~.slider__footer .quote__1 {
   margin-left: -400%;
+}
+
+.slider__container:has(#dot__1:active ) ~.slider__footer .dot__1:active span,
+.slider__container:has(#dot__2:active ) ~.slider__footer .dot__2:active span,
+.slider__container:has(#dot__3:active ) ~.slider__footer .dot__3:active span,
+.slider__container:has(#dot__4:active ) ~.slider__footer .dot__4:active span,
+.slider__container:has(#dot__5:active ) ~.slider__footer .dot__5:active span {
+  opacity: 1;
+  background-color: rgb(17, 228, 228);
+  border: 0.2rem solid rgb(19, 19, 19);
+  transform: scale(1.5);
 }
 
 @media(max-width: 1024px) {
